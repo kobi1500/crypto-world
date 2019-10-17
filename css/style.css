@@ -223,12 +223,12 @@ header .content-header .search div span {
 }
 
 main #main {
-  margin-top: 20%;
+  margin-top: -20%;
 }
 
 @media (max-width: 767px) {
   main #main {
-    margin-top: 60%;
+    margin-top: 30%;
   }
 }
 
@@ -419,37 +419,131 @@ main #main-right .content div p {
   float: right;
 }
 
-main #upfoot2 {
-  margin-top: -20%;
+main #section3 {
+  margin-top: 5vw !important;
 }
 
-main #upfoot2 #right-box {
-  background: url("../PNG/ATF1left.png") no-repeat right/contain;
-  height: 90vh;
-  z-index: -1;
+main  #right-box {
+  background: url("../PNG/Bottomelementleft.png") no-repeat right/contain;
+  height: 100vh;
+  width: 100vw;
 }
+
+main .title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+main .title h4{
+    color: white;
+    font-size: 4vw;
+}
+
+main #right-box .box:first-child{
+    margin-top: 13vw;
+}
+main #right-box .box{
+    background: white;
+    border-radius: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vw;
+    width: 40vw;
+    padding: 20px;
+}
+main #right-box .box:nth-child(2){
+    margin-left: 7vw !important;
+}
+
+main #right-box .box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #464646;
+    }
+
+    
+    main #right-box .box div span{
+        background: url("../svg/plus.svg") no-repeat center center;
+        width: 15vw !important;
+        height: 11vh !important;  
+        margin-right:55px;            
+    }
+    main #right-box .box div p{
+        margin-right:55px;
+    }
+
+    main #left-box .box:first-child{
+        margin-top: 3vw;
+        margin-left: 10vw;
+    }
+main #left-box .box{
+    background: white;
+    border-radius: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15vw;
+    width: 40vw;
+    padding: 20px;
+}
+main #left-box .box:nth-child(2) div span{
+    background: url("../svg/minus.svg") no-repeat center center;
+    width: 15vw !important;
+    height: 11vh !important;  
+    margin-right:55px;  
+}
+
+main #left-box .box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #464646;
+    }
+
+    
+    main #left-box .box div span{
+        background: url("../svg/plus.svg") no-repeat center center;
+        width: 15vw !important;
+        height: 11vh !important;  
+                    
+    }
+    main #left-box .box div p{
+        margin-right:55px;
+    }
+
+    main #left-box .content .inside{
+        width: 568px;
+        height: 208px;
+       border-radius: 66px;
+       background: white;
+    }
 
 @media (max-width: 767px) {
-  main #upfoot2 #right-upfoot {
+  main #boxes #right-box {
     background: unset !important;
     height: unset !important;
   }
 }
 
-main #upfoot2 #left-box {
-  background: url("./svg/path-2.svg") no-repeat left/contain;
-  height: 110vh;
+main #boxes #left-box {
+  background: url("../PNG/Bottomelementright.png") no-repeat left/contain;
+  height: 100vh;
+  width: 100vw;
   z-index: -1;
 }
 
 @media (max-width: 767px) {
-  main #upfoot2 #left-box {
+  main #boxes #left-box {
     height: 250px;
     margin-top: -5%;
   }
 }
 
-main #upfoot {
+main #section3 {
   background: #623bbb;
   text-align: center;
   color: white;
@@ -459,40 +553,40 @@ main #upfoot {
 }
 
 @media (max-width: 767px) {
-  main #upfoot {
+  main #section3 {
     margin-top: -25%;
   }
-  main #upfoot h2 {
+  main #section3 h2 {
     font-size: 8vw !important;
     font-weight: bold;
   }
-  main #upfoot h3 {
+  main #section3 h3 {
     font-size: 5.5vw !important;
   }
-  main #upfoot p {
+  main #section3 p {
     font-size: 3.5vw !important;
   }
-  main #upfoot .numbers div {
+  main #section3 .numbers div {
     height: 5vh !important;
     max-width: 9vw !important;
     font-size: 5vw !important;
   }
 }
 
-main #upfoot p {
+main #section3 p {
   font-size: 0.9vw;
 }
 
-main #upfoot h2 {
+main #section3 h2 {
   font-size: 2vw;
   font-weight: bold;
 }
 
-main #upfoot h3 {
+main #section3 h3 {
   font-size: 1.5vw;
 }
 
-main #upfoot .numbers {
+main #section3 .numbers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,12 +597,12 @@ main #upfoot .numbers {
   margin: 5vh 0 0 0;
 }
 
-main #upfoot .numbers .select {
+main #section3 .numbers .select {
   background: #00a9ff;
   color: white;
 }
 
-main #upfoot .numbers div {
+main #section3 .numbers div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,7 +621,7 @@ main #upfoot .numbers div {
 }
 
 @media (max-width: 767px) {
-  main #upfoot .numbers div {
+  main #section3 .numbers div {
     margin-left: 5%;
   }
 }
