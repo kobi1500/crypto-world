@@ -442,7 +442,7 @@ main .title{
 @media(max-width:767px){
     main  .title h4{
        margin-top: 10vw !important;
-       margin-bottom:50vw;
+       margin-bottom:70vw;
        font-size: 5vw !important;
     }
 }
@@ -487,7 +487,6 @@ main #right-box .box div {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 55vw !important;
         }
         main #right-box .box{
             width:336px !important;
@@ -499,7 +498,7 @@ main #right-box .box div {
       main #left-box .content{
          display: block;
          text-align: center;
-        margin-top: -50%;
+        margin-top: -70%;
         margin-left: 50px;
       }
       main #right-box .content{
@@ -513,20 +512,22 @@ main #right-box .box div {
         }
         
         main #left-box .content .box:nth-child(2), .box:first-child{
-            margin-top: 35vw !important;
+            margin-top: 20vw !important;
         }
         main #right-box .content .box:first-child{
-            margin-top: 35vw !important;
+            margin-top: 25vw !important;
+            margin-bottom:25vw;
         }
         main #right-box .content .box:nth-child(2){
             margin-bottom: 35vw !important;
         }
-        main #left-box .box:first-child div span{
-            display: none;   
+        main #left-box .box div span {
+            position: absolute;
+            margin-top: -19vw;
+            margin-left: -7vw;
+ 
         }
-        main #right-box .box:first-child div span{
-            display: none;   
-        }
+      
        
         main #left-box .box:first-child div p{
             font-size: 3vw !important;
@@ -538,23 +539,42 @@ main #right-box .box div {
             text-align: center;
             padding-bottom: 5px;
         }
+       
+        main #right-box .box div span {
+            position: absolute;
+            margin-top: -19vw;
+            margin-left: -2vw;
+ 
+        }
         main #left-box .box:nth-child(2) div span{
-            display: none;
+            background: url("../svg/plus.svg")no-repeat center center !important;
+         margin-top: -10vw !important;
         }
-        main #right-box .box:nth-child(2) div span{
-            display: none;
+        main #left-box .box:nth-child(2) div p{
+            position: absolute;
+            margin-top: 1rem !important;
+            font-size: 0.4rem !important;
         }
-        main #left-box .box div{
-            font-size: 5vw;
+        main #left-box .box {
+            display: block;
         }
+      
 
-        main #left-box .content .box:nth-child(2) p{
+        main #left-box .content .box div p{
             font-size: 2.5vw !important;
+            text-align: center;
+        }
+        main #right-box .content .box:nth-child(2) p,
+        main #left-box .content .box:nth-child(2) p{
+            position: relative;
+            font-size: 2.5vw !important;
+            text-align: center;
         }
 
         main #boxes #left-box{
             background: unset !important;
         }
+        
       
     }
     
