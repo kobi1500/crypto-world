@@ -504,7 +504,7 @@ main #right-box .box div {
       main #right-box .content{
         display: block;
         text-align: center;
-       margin-top: -50%;
+       margin-top: -43%;
        margin-left: 50px;
      }
         main #left-box .box div{
@@ -528,6 +528,17 @@ main #right-box .box div {
  
         }
       
+        main #left-box  .box2{
+            position: absolute;
+            width: 320px !important;
+            border-radius: 66px;
+            height: 6rem;
+            margin-top: 6rem;
+            margin-left:1rem !important;
+            border-top-left-radius: 5px !important;
+            border-top-right-radius: 5px !important;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        }
        
         main #left-box .box:first-child div p{
             font-size: 3vw !important;
@@ -548,7 +559,7 @@ main #right-box .box div {
         }
         main #left-box .box:nth-child(2) div span{
             background: url("../svg/plus.svg")no-repeat center center !important;
-         margin-top: -10vw !important;
+         margin-top: -20vw !important;
         }
         main #left-box .box:nth-child(2) div p{
             position: absolute;
@@ -619,6 +630,7 @@ main #left-box .box div {
         justify-content: center;
         align-items: center;
         color: #464646;
+        border-bottom: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     }
 
     
@@ -634,13 +646,19 @@ main #left-box .box div {
         font-size: 1vw;
     }
 
-    main #left-box .box .box2{
+    main #left-box  .box2{
         border-radius: 66px;
+        background: #fff;
+        padding: 0 18px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     }
-    main #left-box .box .box2 p{
+    main #left-box .box:nth-child(2) .box2 p{
         color: #00a9ff;
         text-align:center;
     }
+
 
 @media (max-width: 767px) {
   main #boxes #right-box {
