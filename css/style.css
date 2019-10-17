@@ -202,7 +202,8 @@ header .content-header .search input {
 
 header .content-header .search div {
   float: right;
-  background: #00a9ff;
+  background: #00a9ff  url("../svg/Search.svg") no-repeat center center;
+  ;
   height: 100%;
   width: 4vw;
   color: white;
@@ -228,7 +229,7 @@ main #main {
 
 @media (max-width: 767px) {
   main #main {
-    margin-top: 30%;
+    margin-top: 60%;
   }
 }
 
@@ -265,10 +266,10 @@ main .q img {
   width: 9vw;
 }
 
-main #main-left {
+main  #main-left {
   background: url("../PNG/ATF2right.png") no-repeat left/contain;
   height: 130vh;
-  z-index: 1;
+  z-index: -1;
 }
 
 @media (max-width: 767px) {
@@ -420,13 +421,15 @@ main #main-right .content div p {
 }
 
 main #section3 {
-  margin-top: 5vw !important;
+  margin-top: -5vw !important;
 }
 
 main  #right-box {
-  background: url("../PNG/Bottomelementleft.png") no-repeat right/contain;
+    background: url("../PNG/Bottomelementleft.png") no-repeat right/contain;
   height: 100vh;
   width: 100vw;
+  top: 20vw;
+  z-index: -1;
 }
 
 main .title{
@@ -436,13 +439,21 @@ main .title{
     align-items: center;
 }
 
+@media(max-width:767px){
+    main  .title h4{
+       margin-top: 10vw !important;
+       margin-bottom:50vw;
+       font-size: 5vw !important;
+    }
+}
+
 main .title h4{
     color: white;
     font-size: 4vw;
 }
 
 main #right-box .box:first-child{
-    margin-top: 13vw;
+    margin-top: -15vw;
 }
 main #right-box .box{
     background: white;
@@ -451,11 +462,13 @@ main #right-box .box{
     justify-content: center;
     align-items: center;
     margin-bottom: 15vw;
-    width: 40vw;
+    width: 568px;
+    height:129px;
     padding: 20px;
 }
 main #right-box .box:nth-child(2){
-    margin-left: 7vw !important;
+    margin-right: 15vw !important;
+    margin-top: -5vw !important;
 }
 
 main #right-box .box div {
@@ -465,6 +478,85 @@ main #right-box .box div {
         color: #464646;
     }
 
+    @media(max-width:767px){
+        
+        main #left-box .box{
+            width:336px !important;
+            height:121px !important;
+              margin-bottom: 5vw !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 55vw !important;
+        }
+        main #right-box .box{
+            width:336px !important;
+            height:121px !important;
+        }
+      main #right-box{
+          background: unset !important;
+      }
+      main #left-box .content{
+         display: block;
+         text-align: center;
+        margin-top: -50%;
+        margin-left: 50px;
+      }
+      main #right-box .content{
+        display: block;
+        text-align: center;
+       margin-top: -50%;
+       margin-left: 50px;
+     }
+        main #left-box .box div{
+           margin-left: 55px;
+        }
+        
+        main #left-box .content .box:nth-child(2), .box:first-child{
+            margin-top: 35vw !important;
+        }
+        main #right-box .content .box:first-child{
+            margin-top: 35vw !important;
+        }
+        main #right-box .content .box:nth-child(2){
+            margin-bottom: 35vw !important;
+        }
+        main #left-box .box:first-child div span{
+            display: none;   
+        }
+        main #right-box .box:first-child div span{
+            display: none;   
+        }
+       
+        main #left-box .box:first-child div p{
+            font-size: 3vw !important;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        main #right-box .box:first-child div p{
+            font-size: 3vw !important;
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        main #left-box .box:nth-child(2) div span{
+            display: none;
+        }
+        main #right-box .box:nth-child(2) div span{
+            display: none;
+        }
+        main #left-box .box div{
+            font-size: 5vw;
+        }
+
+        main #left-box .content .box:nth-child(2) p{
+            font-size: 2.5vw !important;
+        }
+
+        main #boxes #left-box{
+            background: unset !important;
+        }
+      
+    }
     
     main #right-box .box div span{
         background: url("../svg/plus.svg") no-repeat center center;
@@ -477,18 +569,23 @@ main #right-box .box div {
     }
 
     main #left-box .box:first-child{
-        margin-top: 3vw;
-        margin-left: 10vw;
+        margin-top: -12vw !important;
+        margin-left: 1vw;
+    }
+    main #left-box .box:nth-child(2){
+        margin-top: -5vw !important;
+        margin-left: 1vw;
     }
 main #left-box .box{
     background: white;
     border-radius: 142px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 15vw;
-    width: 40vw;
-    padding: 20px;
+    width: 568px;
+    height:129px;
 }
 main #left-box .box:nth-child(2) div span{
     background: url("../svg/minus.svg") no-repeat center center;
@@ -513,13 +610,16 @@ main #left-box .box div {
     }
     main #left-box .box div p{
         margin-right:55px;
+        color: #464646;
+        font-size: 1vw;
     }
 
-    main #left-box .content .inside{
-        width: 568px;
-        height: 208px;
-       border-radius: 66px;
-       background: white;
+    main #left-box .box .box2{
+        border-radius: 66px;
+    }
+    main #left-box .box .box2 p{
+        color: #00a9ff;
+        text-align:center;
     }
 
 @media (max-width: 767px) {
@@ -528,12 +628,14 @@ main #left-box .box div {
     height: unset !important;
   }
 }
+main #boxes{
+    height: 100vh !important;
+}
 
-main #boxes #left-box {
+main #boxes  #left-box {
   background: url("../PNG/Bottomelementright.png") no-repeat left/contain;
-  height: 100vh;
-  width: 100vw;
   z-index: -1;
+  top: 15vw;
 }
 
 @media (max-width: 767px) {
